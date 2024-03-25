@@ -76,17 +76,17 @@ namespace EmployeeManagement.Controller.V1
             return Ok(_employeeBusinessLayer.UpdateEmployee(employeeId, employee));
         }
 
-        /// <summary>
-        /// Delete an employee by Id
-        /// </summary>
-        /// <param name="employeeId"></param>
-        [HttpDelete(Name = "DeleteEmployee")]
-        public ActionResult DeleteEmployee(int employeeId)
-        {
-            _logger.LogInformation("DeleteEmployee method started");
+        ///// <summary>
+        ///// Delete an employee by Id
+        ///// </summary>
+        ///// <param name="employeeId"></param>
+        //[HttpDelete(Name = "DeleteEmployee")]
+        //public ActionResult DeleteEmployee(int employeeId)
+        //{
+        //    _logger.LogInformation("DeleteEmployee method started");
 
-            _employeeBusinessLayer.DeleteEmployee(employeeId);
-            return Ok();
-        }
+        //    _employeeBusinessLayer.DeleteEmployee(employeeId);
+        //    return Ok();
+        //}
     }
 }
